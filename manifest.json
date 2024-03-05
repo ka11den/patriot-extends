@@ -1,0 +1,27 @@
+{
+  "name": "Русский патроит!",
+  "description": "стань патриотом!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "32": "./assets/icons/icon.png"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "type": "module"
+  },
+  "action": {
+    "default_popup":"index.html"
+  },
+  "content_scripts": [ {
+    "matches": [
+      "*://*/*"
+    ],
+    "js": ["./assets/js/main.js"]
+  } ]
+}

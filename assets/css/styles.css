@@ -1,0 +1,9 @@
+body {
+  width: 300px;
+}
+
+a {
+  font-size: 1.2em;
+  color: #111;
+  text-decoration: none;
+}
